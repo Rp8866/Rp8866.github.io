@@ -2235,3 +2235,37 @@ span.error {
         left: -32px;
     }
 }
+
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+}
+
+.social-links a:hover .social-icon {
+  filter: grayscale(0%);
+  transform: translateY(-6px) scale(1.15);
+}
+
+/* Mobile optimization */
+@media (max-width: 576px) {
+  .social-icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.divider-hr {
+  width: 60%;
+  margin: 30px auto;
+  border: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #999, transparent);
+}

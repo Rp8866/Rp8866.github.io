@@ -19,14 +19,14 @@ const datas = [
         type: ["Charity", "E-commerce"],
         technology: ["Laravel", "React", "TypeScript"]
     },
-    {
-        name: "FreeMyArt",
-        description: "Marketplace for artists to sell services with RESTful APIs and secure transactions.",
-        link: "http://www.freemyart.org/",
-        imgsrc: "images/projects/default.jpg",
-        type: ["Laravel API", "Mobile App"],
-        technology: ["Laravel", "Azure DevOps"]
-    },
+    // {
+    //     name: "FreeMyArt",
+    //     description: "Marketplace for artists to sell services with RESTful APIs and secure transactions.",
+    //     link: "http://www.freemyart.org/",
+    //     imgsrc: "#",
+    //     type: ["Laravel API", "Mobile App"],
+    //     technology: ["Laravel", "Azure DevOps"]
+    // },
     {
         name: "Harbor Towns Cruises",
         description: "Geo-location based mobile app for discovering nearby events, cruises, and shops.",
@@ -73,7 +73,7 @@ const datas = [
 const projects = document.getElementById("posts");
 
 projects.innerHTML = datas.map(data => {
-    const image = data.imgsrc || "images/projects/default.jpg";
+    const image = data.imgsrc || "#";
     const link = data.link || "#";
     const types = Array.isArray(data.type) ? data.type.join(" • ") : data.type || "";
     const subtitle = data.subtitle ? `<small>${data.subtitle}</small>` : "";
