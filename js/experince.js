@@ -1,9 +1,20 @@
 const experience = [
     {
+        company_name: "Freealncer",
+        job_title: "Full Stack Developer",
+        start_date: "Feb 2026",
+        end_date: "Present",
+        description: [
+            "Developing and maintaining scalable web applications using Laravel and Vue.js.",
+            "Designing REST APIs and integrating third-party services.",
+            "Collaborating with UI/UX and QA teams to deliver high-quality features."
+        ]
+    },
+    {
         company_name: "DK Infoway",
         job_title: "Full Stack Developer",
         start_date: "Mar 2025",
-        end_date: "Present",
+        end_date: "Feb 2026",
         location: "Surat, GJ",
         description: [
             "Developing and maintaining scalable web applications using Laravel and Vue.js.",
